@@ -53,6 +53,7 @@
             const parentLi = target.parentNode;
             const subMenu = parentLi.querySelector('ul');
             if (subMenu) {
+                event.preventDefault();
               subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
             } else {
               alert('Переход по ссылке: ' + target.href);
